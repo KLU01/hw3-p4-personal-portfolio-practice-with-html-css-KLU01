@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri');
+
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: #ffe6e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  position: fixed;
+  /* column-span:all; */
+  width: 100%;
+  background:red;
+  display:block;
+  min-height: 5vh;
+}
+
+nav, a {
+  text-align: right;
+}
+
+#welcome-section {
+  min-height: 95vh;
+}
+#projects {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+#contact {
+  background-color: #ffcccc;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #ff0066;
+  color: white;
+}
