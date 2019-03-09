@@ -3,6 +3,7 @@
 body {
   font-family: 'Hind Siliguri', sans-serif;
   background-color: #ffe6e6;
+  padding-top: 50px;
 }
 
 * {
@@ -18,19 +19,37 @@ body {
 
 nav {
   position: fixed;
-  /* column-span:all; */
+  z-index: 10000;
+  top: 0px;
   width: 100%;
-  background:red;
-  display:block;
-  min-height: 5vh;
 }
 
-nav, a {
-  text-align: right;
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  nav  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 #welcome-section {
-  min-height: 95vh;
+  min-height: 100vh;
 }
 #projects {
   background-color: #ffffff;
@@ -45,4 +64,8 @@ nav, a {
 footer {
   background-color: #ff0066;
   color: white;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
