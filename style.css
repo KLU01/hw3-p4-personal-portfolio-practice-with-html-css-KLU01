@@ -11,11 +11,7 @@ body {
   padding: 0;
 }
 
-.container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
+/* navigation bar */
 
 nav {
   position: fixed;
@@ -46,23 +42,82 @@ nav a:hover {
     padding-top: 50px;
   }
 
-  nav  ul {
+  nav ul {
     display: flex;
     justify-content: flex-end;
   }
 }
 
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* welcome */
+
 #welcome-section {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+/* projects */
+
 #projects {
   background-color: #ffffff;
   min-height: 100vh;
+  /* padding-top: 140px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+#projects > p {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#project-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  align-self: center;
+}
+
+#project-container > .project-tile {
+  border: 1px solid #333;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  padding: 20px 20px 20px 20px
+}
+
+.project-tile > a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* contact */
 
 #contact {
   background-color: #ffcccc;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact > p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#profile-link {
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 footer {
